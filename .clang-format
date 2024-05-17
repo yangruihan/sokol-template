@@ -1,0 +1,54 @@
+BasedOnStyle: llvm
+---
+AccessModifierOffset: -4
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Right
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left
+AlignOperands: AlignAfterOperator
+AlignTrailingComments: true
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortBlocksOnASingleLine: Empty
+AllowShortEnumsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: Inline
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+ColumnLimit: 80
+DerivePointerAlignment: false
+IncludeBlocks: Preserve
+IncludeCategories:
+  - Regex: '<[[:alnum:]_]+>'
+    Priority: 1
+  - Regex: '<(gtest|gmock)/'
+    Priority: 2
+  - Regex: '<[[:alnum:]_.]+/[[:alnum:]_.]+>'
+    Priority: 3
+  - Regex: '<[[:alnum:]_.]+/[[:alnum:]_.]+/[[:alnum:]_./]+>'
+    Priority: 4
+  - Regex: '.*'
+    Priority: 5
+IndentPPDirectives: AfterHash
+IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: false
+Language: Cpp
+PointerAlignment: Right
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: false
+SpaceAroundPointerQualifiers: After
+SpaceBeforeCaseColon: false
+SpaceBeforeCtorInitializerColon: false
+SpaceBeforeInheritanceColon: false
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: false
+Standard: Latest
+TabWidth: 4
+UseTab: Never
